@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dizi ile Ortalama</title>
+</head>
+<body>
+    <script>
+        // dizi oluştur.
+        var sayilar = new Array();
+
+        // dizi eleman sayisi 
+        var n = Number(prompt("dizi eleman sayısı: "));
+
+        // dizi elemanlarını ekrandan al
+        for (var i =0; i< n; i ++) {
+            sayilar[i] = Number(prompt(i + " indisli eleman"));
+        }
+
+        // dizi elemanlarının toplamı 
+        var diziToplam = 0; 
+        var diziOrtalama = 0;
+        for (var i =0; i<n; i++) {
+            diziToplam = diziToplam + sayilar[i];
+        }
+        // dizi ortalama 
+        diziOrtalama = diziToplam / n;
+
+        // ortalamayı yazalım.
+        document.write("Ortalama = "+ diziOrtalama);
+    </script>
+    
+</body>
+</html>

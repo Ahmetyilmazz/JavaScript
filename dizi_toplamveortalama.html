@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dizi ile 5 sayı</title>
+  </head>
+  <body>
+    <script>
+      // dizi oluştur
+      var sayilar = new Array(5);
+      var diziToplam = 0;
+      var diziOrtalama = 0;
+
+      // dizi elemanlarını alalım.
+      for (var i = 0; i < 5; i++) {
+        sayilar[i] = Number(prompt(i + " sayı"));
+        diziToplam = diziToplam + sayilar[i]; // dizi toplamı
+        diziOrtalama = diziToplam / (i+1); // dizi ortalaması
+      }
+
+      // dizi yazdır
+      for (var i = 0; i < 5; i++) {
+        document.write(i + ". eleman:" + sayilar[i] + "<br>");
+      }
+      document.write("Dizideki indislerin toplamları = " + diziToplam);
+      document.write("Dizideki indislerin Ortalaması = " + diziOrtalama);
+    </script>
+  </body>
+</html>

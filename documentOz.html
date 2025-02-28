@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Özellikleri</title>
+  </head>
+  <body>
+    <script>
+      // document özellikleri
+
+      document.write("Sayfa adresi: " + document.URL);
+      document.write("<br>");
+      document.write("Gelinen sayfa: " + document.referrer); // Boş olmasının sebebi; burada doğrudan bu sayfayı çalıştırıyoruz başka bir sayfadan gelmiyoruz.
+      document.write("<br>");
+      document.write("Sayfa başlığı: " + document.title);
+      document.write("<br>");
+      document.write(
+        "Sayfanın genişliği: " + document.documentElement.clientWidth
+      );
+      document.write("<br>");
+      document.write(
+        "Sayfanın yüksekliği: " + document.documentElement.clientHeight 
+      );
+      document.write("<br>");
+      document.write("Karakter seti: " + document.characterSet);
+      document.write("<br>");
+      document.write("Son güncelleme Tarihi: " + document.lastModified);
+    </script>
+  </body>
+</html>

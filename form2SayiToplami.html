@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <form>
+      1.Sayı: <input type="text" id="sayi_bir" /> <br />
+      2.Sayı: <input type="text" id="sayi_iki" /> <br />
+      Toplam: <span id="toplam"></span> <br />
+      Ortalama: <span id="ortalama"></span> <br />
+      <input type="button" value="Toplam" onclick="toplam()" /> <br />
+      <input type="button" value="Ortalama" onclick="ortalama()" /> <br />
+    </form>
+    <script>
+      function toplam() {
+        // Formda girilen sayıları alalım.
+        var sayi1 = Number(document.getElementById("sayi_bir").value);
+        var sayi2 = Number(document.getElementById("sayi_iki").value);
+
+        // Sayıları toplayalım.
+        var toplam = sayi1 + sayi2;
+
+        // İşlem sonucunu ekrana yazdıralım.
+        document.getElementById("toplam").innerHTML = toplam;
+      }
+
+      function ortalama() {
+        // Formda girilen sayıları alalım.
+        var sayi1 = Number(document.getElementById("sayi_bir").value);
+        var sayi2 = Number(document.getElementById("sayi_iki").value);
+
+        // Sayıları toplayalım.
+        var toplam = sayi1 + sayi2;
+
+        // Ortalama bulalım.
+        var ortalama = toplam / 2;
+
+        // İşlem sonucunu ekrana yazdıralım.
+        document.getElementById("ortalama").innerHTML = ortalama;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faktöriyel AL</title>
+  </head>
+  <body>
+    <script>
+      function faktoriyelAl(x) {
+        
+        var faktoriyel = 1;
+        for (var i = 1; i <= x; i++) {
+            faktoriyel = faktoriyel * i;
+        }
+        return faktoriyel;
+      }
+
+      // Kullanıcıdan faktoriyelini alacağı değeri isteyelim.
+      var n = Number(prompt("Lütfen faktöriyelini almak istediğiniz sayıyı giriniz: "));
+
+      // ekrana yazdıralım.
+      document.write(faktoriyelAl(n) + "<br>");
+    </script>
+  </body>
+</html>

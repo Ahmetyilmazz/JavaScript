@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do - While Örnek</title>
+  </head>
+  <body>
+    <script>
+
+      var n, s, sayi, ortalama = 0, toplam = 0 ;
+      // N Adet sayı 
+      n = Number(prompt("Kaç adet sayı gireceksiniz ? : "));
+
+      // n adet sayi alalım ve toplayalım.
+      for (s = 1; s<= n; s++) {
+
+        sayi = Number(prompt("Sayi Girinz : "));
+        toplam = toplam + sayi;
+      }
+
+      // ortalama hesabı
+
+      ortalama = toplam / n;
+      document.write("Girdiğiniz sayıların ortalaması = " + ortalama);
+
+    </script>
+  </body>
+</html>

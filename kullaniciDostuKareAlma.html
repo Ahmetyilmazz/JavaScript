@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body onload="odaklan()">
+    <form>
+      Sayı: <input type="text" id="sayi" /> <br />
+      Karesi: <span id="sonuc"></span> <br />
+      <input type="button" value="Hesapla" onclick="hesapla()" /> <br />
+    </form>
+    <script>
+      function odaklan() {
+        document.getElementById("sayi").style.backgroundColor = "blue";
+        document.getElementById("sayi").focus();
+      }
+      function hesapla() {
+        // Formda girilen sayı
+        var sayi = document.getElementById("sayi").value;
+
+        // metin kutusu boş ise uyar
+        if (sayi == "") {
+          alert("Lütfen sayı giriniz !!");
+          document.getElementById("sayi").style.backgroundColor = "red";
+          document.getElementById("sayi").focus();
+        } 
+        // metin kutusu boş değilse aşağıdaki işlemleri yap
+        else { 
+          sayi = Number(sayi); // okunan değeri Number veritipine çevir
+
+          // değer <=0 ise uyar
+          if (sayi <= 0) {
+            
+            alert("Pozitif bir sayı giriniz !!!");
+            document.getElementById("sayi").style.backgroundColor = "red";
+            document.getElementById("sayi").focus();
+          } 
+          // değer >0 ise kare işlemini yap ve sonucu yaz
+          else {
+            var kare = sayi * sayi; // Sayınnı karesini hesaplayalım.
+            document.getElementById("sonuc").innerHTML = kare; // İşlem sonucunu ekrana yazdıralım.
+            document.getElementById("sayi").style.backgroundColor = "yellow";
+            document.getElementById("sayi").focus();
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nesne Tabanlı Programlama ile Daire Alan ve Çevre Hesapla</title>
+  </head>
+  <body>
+    <script>
+      class Daire {
+        constructor(yaricap) {
+          this.yaricap = yaricap;
+        }
+
+        alan() {
+          return 3.14 * this.yaricap * this.yaricap;
+        }
+
+        cevre() {
+          return 2 * 3.14 * this.yaricap;
+        }
+      }
+
+      var yaricap1 = Number(prompt("Lütfen 1.Yarıçap giriniz: "));
+      var d1 = new Daire(yaricap1);
+      document.write("Alan_1 = " + d1.alan() + " ------ " + "Çevre_1 = " + d1.cevre());
+      document.write("<br>");
+
+      var yaricap2 = Number(prompt("Lütfen 2.Yarıçap giriniz: "));
+      var d2 = new Daire (yaricap2);
+      document.write("Alan_2 = " + d2.alan()  + " ------ " + "Çevre_2 = " + d2.cevre());
+    </script>
+  </body>
+</html>

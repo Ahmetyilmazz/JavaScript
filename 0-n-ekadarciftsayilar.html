@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0'dan N'e kadar ola çift sayıların yazdırılması</title>
+  </head>
+  <body>
+    <script>
+      
+
+      function yazdir(x) {
+        for (var s = 1; s <= x; s += 2) {
+          document.write(s + "<br>");
+        }
+      }
+
+      // Kullanıcıdan n değerini alalım.
+      var n = Number(prompt("Lütfen n sayısı giriniz: "));
+
+      // n'e kadar olan çift sayıları ekrana yazdıralım.
+      yazdir(n);
+    </script>
+  </body>
+</html>

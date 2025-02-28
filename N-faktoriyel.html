@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do - While Örnek</title>
+  </head>
+  <body>
+    <script>
+      var n,
+        i,
+        faktoriyel = 1;
+      // Kullanıcıdan sayı alalım.
+      n = Number(prompt("Sayıyı giriniz : "));
+
+      for (i = 1; i <= n; i++) faktoriyel = faktoriyel * i;
+
+      document.write(n + "! = " + faktoriyel); // document.write("Girdiğiniz sayının faktoriyeli = " + faktoriyel);
+    </script>
+  </body>
+</html>

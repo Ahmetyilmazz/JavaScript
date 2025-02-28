@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Öğrenci Başarı Durumu</title>
+  </head>
+  <body>
+    <script>
+      var alinan_not = Number(prompt("Lütfen aldığınız notu giriniz: "));
+      /* Öğrencinin aldığı 0-100 arası nota göre başarı durumunu tespit edelim. Eğer
+        50'den az ise kaldı, 
+        50 ile 65 arası orta, 
+        66 ile 80 arası iyi ve 
+        diğer durumlarda (81-100 arası) pekiyi olsun.
+        */
+      if (alinan_not < 50) {
+        document.write("Kaldı");
+      } else if (alinan_not <= 65) {
+        document.write("Orta");
+      } else if (alinan_not <= 80) {
+        document.write("İyi");
+      } else document.write("Pekiyi");
+    </script>
+  </body>
+</html>

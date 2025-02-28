@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>setTimeout ile Gecikmeli Mesaj</title>
+  </head>
+  <body onload="setTimeout(mesaj, 5000);">
+    <script>
+      function mesaj() {
+        alert("5 saniye geçti !!!!");
+      }
+    </script>
+
+    <button onclick="setTimeout(mesaj, 10000);"> Butona Tıkla</button>
+  </body>
+</html>

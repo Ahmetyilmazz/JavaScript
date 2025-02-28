@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nesne Tabanlı Programlama ile Daire Alan ve Çevre Hesapla</title>
+  </head>
+  <body>
+    <script>
+      // sınıfı oluşturalım.
+      class Ucgen {
+        static genislik = 0;
+        static yukseklik = 0;
+
+        alan() {
+          return (this.genislik * this.yukseklik) / 2;
+        }
+      }
+
+      // nesne oluştur
+      var u1 = new Ucgen();
+      u1.genislik = 1;
+      u1.yukseklik = 2;
+      document.write("u1 alanı = " + u1.alan());
+      document.write("<br>");
+
+      // nesne oluştur
+      var u2 = new Ucgen();
+      u2.genislik = Number(prompt("Lütfen üçgen genişliğini giriniz: "));
+      u2.yukseklik = Number(prompt("Lütfen üçgen yüksekliğini giriniz: "));
+
+      document.write("U2 alan = " + u2.alan());
+    </script>
+  </body>
+</html>

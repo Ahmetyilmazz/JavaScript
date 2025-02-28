@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üçgenin Alanı</title>
+</head>
+<body>
+
+    <script>
+
+        // Yükseklik ve taban uzunluğu verilen üçgenin alanını ekrana yazdıran fonksiyonu yazalım.
+        // Alan = (Taban * Yükseklik) / 2
+        
+        
+        function ucgenAlan (taban, yukseklik){
+
+            var alan = (taban * yukseklik) / 2;
+            document.write("Girdiğiniz bilgilere göre üçgenin alanı = " + alan);
+        }
+
+
+        // Kullanıcıdan yüksekliği uzunluğunu alalım.
+        var yukseklik = Number(prompt("Lütfen üçgenin yüksekliğini giriniz: "));
+        // Kullanıcıdan taban uzunluğunu alalım.
+        var taban_uzunlugu = Number(prompt("Lütfen üçgenin taban uzunluğunu giriniz: "));
+        
+        ucgenAlan(yukseklik,taban_uzunlugu);
+
+
+
+    </script>
+    
+</body>
+</html>

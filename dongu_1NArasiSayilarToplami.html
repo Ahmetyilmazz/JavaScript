@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1'den N'ye kadar olan sayılar</title>
+  </head>
+  <body>
+    <script>
+      var s, n;
+      var toplam = 0;
+
+      // n değeri
+      n = Number(prompt("n: "));
+
+      // for döngüsü
+      for (s = 1; s <= n; s++) {
+        toplam = toplam + s;
+        
+      }
+      document.write("For ile Toplam = " + toplam + "<br>");
+
+      // While döngüsü ile
+      var s = 1;
+      var toplam = 0; 
+      while (s <= n) {
+        toplam = toplam + s;
+        s++;
+        
+      }
+      document.write("While ile Toplam = " + toplam + "<br>");
+    </script>
+  </body>
+</html>

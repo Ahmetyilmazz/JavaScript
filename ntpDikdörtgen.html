@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nesne Tabanlı Programlama ile Daire Alan ve Çevre Hesapla</title>
+  </head>
+  <body>
+    <script>
+      // sınıfı oluşturalım.
+      class Dikdortgen {
+        static kisa_kenar = 0;
+        static uzun_kenar = 0;
+
+        alan() {
+          return this.kisa_kenar * this.uzun_kenar;
+        }
+      }
+
+      // nesne oluştur
+      var alan1 = new Dikdortgen();
+      alan1.kisa_kenar = Number(
+        prompt("Lütfen dikdörtgenin kısa kenarını giriniz: ")
+      );
+      alan1.uzun_kenar = Number(
+        prompt("Lütfen dikdörtgenin uzun kenarını giriniz: ")
+      );
+
+      document.write("Dikdörgenin alanı = " + alan1.alan());
+    </script>
+  </body>
+</html>

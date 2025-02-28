@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vize - Final Ortalaması</title>
+  </head>
+  <body>
+    <script>
+      var vize_puani = Number(prompt("Lütfen Vize puanınızı giriniz: "));
+      var final_puani = Number(prompt("Lütfen Final puanınızı giriniz: "));
+
+      var vize = vize_puani * 0.4;
+      var final = final_puani * 0.6;
+
+      var ortalama = vize + final;
+      document.write("Ders ortalamanız: " + " " + ortalama);
+      document.write("<br>");
+      // Geçme ortalaması 50 olsun.
+      if (ortalama < 50) {
+        document.write("Kaldınız..");
+      } else {
+        document.write("Geçtiniz..");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bölüm 13 Ödevleri</title>
+  </head>
+  <body onload="odaklan()">
+    <form>
+      Ad: <input type="text" id="ad" /> <br />
+      <br />
+      Girilen Ad: <span id="girilenAd"></span> <br /><br />
+      <input type="button" value="Kontrol et" onclick="kontrolEt()" /> <br />
+    </form>
+    <hr> <hr><hr><hr><hr>
+    <form>
+        Vize Notunuz: <input type="text" id="vize1"> <br> <br>
+        Girilen Not: <span id="girilenVize"></span> <br /><br />
+        <input type="button" value="Kontrol et" onclick="vizeNotu()" /> <br />
+    </form>
+    <script>
+      /*
+        1- Id değeri "ad" olan metin kutusunun içeriği boş ise "lütfen adınızı giriniz" yazan mesaj kutusu çalışsın.
+        2- Id değeri "vize1" olan metin kutusunun değeri sıfırdan küçük veya 100'den büyükse "lütfen geçerli bir değer giriniz" yazan mesaj kutusu çalışsın
+        */
+      
+      //--- 1. SORUNUN CEVABI ---
+      function odaklan() {
+        document.getElementById("ad").style.backgroundColor = "orange";
+        document.getElementById("ad").focus();
+        document.getElementById("vize1").style.backgroundColor = "blue";
+        document.getElementById("vize1").focus();
+        
+      }
+
+      function kontrolEt() {
+        // metini alalım.
+        var metin_kutusu = document.getElementById("ad").value;
+
+        // metin kutusu boş ise
+        if (metin_kutusu == "") {
+          alert("Lütfen adınızı giriniz !!!!");
+          document.getElementById("ad").style.backgroundColor = "red";
+          document.getElementById("ad").focus();
+        }
+
+        document.getElementById("girilenAd").innerHTML = metin_kutusu;
+      }
+
+      //--- 2. SORUNUN CEVABI ---
+
+      function vizeNotu(){
+
+        // vize notunu alalım.
+        var vizeNotu = document.getElementById("vize1").value;
+
+        // vizeNotu<0 veya vizeNotu > 100 ise
+        if (vizeNotu < 0 || vizeNotu > 100) {
+          alert("Vize notunuz negatif veya 100'den büyük olamaz. Lütfen geçerli bir değer giriniz !!!!");
+          document.getElementById("vize1").style.backgroundColor = "red";
+          document.getElementById("vize1").focus();
+        }
+        
+        document.getElementById("girilenVize").innerHTML = vizeNotu;
+      }
+    </script>
+  </body>
+</html>

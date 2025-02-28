@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Üçgenin Alanı</title>
+  </head>
+  <body>
+    <script>
+      // Yarıçapı verilen çemberin alan ve çevresini ekrana yazdıran fonksiyonu yazalım.
+      // Daire Alan = PI * R * R
+      // Daire Çevre = 2 * PI * R
+
+      const PI = 3.14; // Sabit değişken
+
+      function daireAlan(yaricap) {
+        var alan = PI * yaricap * yaricap;
+        document.write("Girdiğiniz bilgilere göre dairenin alanı = " + alan + "<br>");
+      }
+
+      function daireCevre(yaricap) {
+        var cevre = 2 * PI * yaricap;
+        document.write("Girdiğiniz bilgilere göre dairenin çevresi = " + cevre);
+      }
+
+      // Kullanıcıdan yüksekliği uzunluğunu alalım.
+      var yaricap = Number(prompt("Lütfen dairenin yarıçapını giriniz: "));
+
+      daireAlan(yaricap);
+      daireCevre(yaricap);
+    </script>
+  </body>
+</html>

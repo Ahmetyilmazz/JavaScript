@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bölüm 10 Ödevi</title>
+  </head>
+  <body>
+    <script>
+      /* 
+        1. Soru = Kullanıcıdan prompt() komutu ile aldığınız değerin karekökünü Math.sqrt() ile hesaplayın sayfaya yazdırın. 
+        2. Soru = Ekrana Math.random() ile 5 edet rasgele sayı yazdırın.
+        3. Soru = Kullanıcıdan aldığınız yarıçap değeri ile Math.PI özelliğini kullanarak ekrana çemberin alanını ve çevresini yazdırın. 
+        4. Soru = Kullanıcıdan aldığınız metni büyük harflere çevirip sayfaya yazdırın.
+        5. Soru = Kullanıcıdan aldığınız metnin harflerini sayfada alt alta satırlara yazdırın. 
+        */
+
+      // 1. Soru Cevap
+      /*
+      var alinan_sayi = Number(
+        prompt("Lütfen karekökünü almak istediğiniz sayıyı yazınız: ")
+      );
+      var karekok = Math.sqrt(alinan_sayi);
+      document.write("Yazdığınız sayının karekökü = " + karekok);
+      document.write("<br>");
+      */
+      // 2. Soru Cevap
+      /*
+      document.write("0-1 arası Random sayı = " + Math.random() + "<br>");
+      document.write("0-10 arası Random sayı = " + Math.random() * 11 + "<br>");
+      document.write("0-50 arası Random sayı = " + Math.random() * 51 + "<br>");
+      document.write("0-75 arası Random sayı = " + Math.random() * 76 + "<br>");
+      document.write(
+        "0-100 arası Random sayı = " + Math.random() * 101 + "<br>"
+      );
+      */
+
+      // 3. Soru Cevap
+      /*
+      class Daire {
+        constructor(yaricap) {
+          this.yaricap = yaricap;
+        }
+
+        alan() {
+          return Math.PI * this.yaricap * this.yaricap;
+        }
+
+        cevre() {
+          return 2 * Math.PI * this.yaricap;
+        }
+      }
+
+      var yaricap = Number(prompt("Lütfen Dairenin Yarıçapını giriniz : "));
+
+      var daire = new Daire(yaricap);
+      document.write("Alan = " + daire.alan() + "<br>");
+      document.write("Çevre = " + daire.cevre() + "<br>");
+      */
+
+      // 4. Soru Cevap
+
+      /*
+      var metin = prompt("Lütfen bir metin giriniz: ");
+
+      var metin_buyuk_harf = metin.toUpperCase();
+
+      document.write(
+        "Girdiğiniz metinin büyük harfe çevrilmiş hali = " + metin_buyuk_harf
+      );
+
+      */
+      // 5. Soru Cevap
+      /*
+      var metin = prompt("Lütfen bir metin giriniz: ");
+
+      for (var i =0; i <= metin.length; i++) {
+        document.write(metin.charAt(i) + "<br>");
+      }
+      */
+    </script>
+  </body>
+</html>

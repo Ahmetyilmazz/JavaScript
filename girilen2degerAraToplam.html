@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do - While Örnek</title>
+  </head>
+  <body>
+    <script>
+      // değişkenleri tanımlayalım.
+      var x,
+        y,
+        toplam = 0;
+
+      // Kullanıcıdan sayıları alalım.
+      x = Number(prompt("x giriniz : "));
+      y = Number(prompt("y giriniz : "));
+
+      // While döngüsü ile
+      while (x<=y) {
+        toplam = toplam + x;
+        x++
+      }
+      document.write("toplam = " + toplam);
+
+
+      // for döngüsü ile
+      for (; x <= y; x++) {
+        toplam = toplam + x;
+      }
+      // sonucu yazdıralım
+      document.write("toplam = " + toplam);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Uygulama</title>
+  </head>
+  <body>
+    <script>
+      var an = new Date();
+
+      var gun = an.getDate(); // Gün'ü almak için
+      var ay = an.getMonth(); // Ay'ı almak için (Bize 0-11 olarak yazdırıyor o yüzden (ay+1) olarak kullanırsak çözülmüş olur.)
+      var yil = an.getFullYear(); // Yıl'ı almak için
+      var saat = an.getHours(); // Saat'i almak için
+      var dakika = an.getMinutes(); // Dakika'yı almak için
+
+      // Sayfaya tarih-saat yazalım.
+      document.write("Tarih :" + gun + "/" + (ay + 1) + "/" + yil);
+      document.write("Saat :" + saat + ":" + dakika);
+      document.write("<br>");
+      document.write("Gün = " + gun + "<br>");
+      document.write("Ay = " + (ay + 1) + "<br>");
+      document.write("Yıl = " + yil + "<br>");
+      document.write("Saat = " + saat + "<br>");
+      document.write("Dakika = " + dakika + "<br>");
+    </script>
+  </body>
+</html>
